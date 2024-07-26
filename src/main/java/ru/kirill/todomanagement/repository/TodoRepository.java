@@ -1,2 +1,8 @@
-package ru.kirill.todomanagement.repository;public interface TodoRepository {
+package ru.kirill.todomanagement.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import ru.kirill.todomanagement.entity.Todo;
+
+public interface TodoRepository  extends JpaRepository<Todo, Long> {
+
 }
